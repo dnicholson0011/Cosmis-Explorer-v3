@@ -10,6 +10,7 @@ public class ElementAttributesExamplesPage {
     private By paragraphAttributes = By.cssSelector("p[custom-attrib='attrib in source at load']");
     private By paragraphDynamicAttributes = By.id("jsattributes");
     private By addAnotherAttributeButton = By.className("styled-click-button");
+    private By indexUrl = By.cssSelector("a[href='index.html']");
 
     public ElementAttributesExamplesPage(WebDriver driver) {
         this.driver = driver;
@@ -17,6 +18,10 @@ public class ElementAttributesExamplesPage {
 
     public String getPageTitle() {
         return driver.getTitle();
+    }
+
+    public WebElement getIndexUrl() {
+        return driver.findElement(indexUrl);
     }
 
     public WebElement getParagraphAttributes() {
