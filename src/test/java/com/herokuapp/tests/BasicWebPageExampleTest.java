@@ -2,6 +2,7 @@ package com.herokuapp.tests;
 
 import com.herokuapp.base.Base;
 import com.herokuapp.pages.BasicWebPageExamplePage;
+import org.openqa.selenium.WebDriverException;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -29,6 +30,9 @@ public class BasicWebPageExampleTest extends Base {
 
             // Navigate to homepage
             basicWebPageExamplePage.getIndexUrl().click();
+        } catch (WebDriverException e) {
+            System.out.println("Error: WebDriverException: " + e.getMessage());
+            throw e;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
             throw e;
