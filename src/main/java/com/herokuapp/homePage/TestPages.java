@@ -1,6 +1,7 @@
 package com.herokuapp.homePage;
 
 import com.herokuapp.pages.BasicWebPageExamplePage;
+import com.herokuapp.pages.ElementAttributesExamplesPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,7 +9,8 @@ public class TestPages {
 
     private WebDriver driver;
 
-    By Basic_Web_Page_Example_Url = By.id("basicpagetest");
+    private By Basic_Web_Page_Example_Url = By.id("basicpagetest");
+    private By Element_Attributes_Examples_Url = By.id("elementattributestest");
     public TestPages(WebDriver driver) {
         this.driver = driver;
     }
@@ -22,7 +24,8 @@ public class TestPages {
         return new BasicWebPageExamplePage(driver);
     }
 
-    public void getUrl() {
-
+    public ElementAttributesExamplesPage getElement_Attributes_Examples_Url() {
+        driver.findElement(Element_Attributes_Examples_Url).click();
+        return new ElementAttributesExamplesPage(driver);
     }
 }

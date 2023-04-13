@@ -16,13 +16,13 @@ public class BasicWebPageExampleTest extends Base {
             String actualTitle = basicWebPageExamplePage.getPageTitle();
             Assert.assertEquals(actualTitle, basicWebPageTitle, "Page title does not match expected title");
 
-            String actualParagraph01Text = basicWebPageExamplePage.getParagraph01Text();
+            String actualParagraph01Text = basicWebPageExamplePage.getParagraph01Text().getText();
             Assert.assertEquals(actualParagraph01Text, paragraph01Text, "Paragraph 01 text does not match expected text");
 
-            String actualParagraph02Text = basicWebPageExamplePage.getParagraph02Text();
+            String actualParagraph02Text = basicWebPageExamplePage.getParagraph02Text().getText();
             Assert.assertEquals(actualParagraph02Text, paragraph02Text, "Paragraph 02 text does not match expected text");
 
-            basicWebPageExamplePage.clickIndexUrl();
+            basicWebPageExamplePage.getIndexUrl().click();
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
             throw e;

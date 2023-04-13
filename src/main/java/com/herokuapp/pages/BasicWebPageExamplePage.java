@@ -2,6 +2,7 @@ package com.herokuapp.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class BasicWebPageExamplePage {
     private WebDriver driver;
@@ -17,15 +18,15 @@ public class BasicWebPageExamplePage {
         return driver.getTitle();
     }
 
-    public void clickIndexUrl() {
-        driver.findElement(indexUrl).click();
+    public WebElement getIndexUrl() {
+        return driver.findElement(indexUrl);
     }
 
-    public String getParagraph01Text() {
-        return driver.findElement(paragraph01).getText();
+    public WebElement getParagraph01Text() {
+        return driver.findElement(paragraph01);
     }
 
-    public String getParagraph02Text() {
-        return driver.findElement(paragraph02).getText();
+    public WebElement getParagraph02Text() {
+        return driver.findElement(paragraph02);
     }
 }

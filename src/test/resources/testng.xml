@@ -4,12 +4,16 @@
     <parameter name="testPageUrl" value="https://testpages.herokuapp.com/styled/index.html"/>
     <parameter name="homePageTitle" value="Selenium Test Pages"/>
     <parameter name="basicWebPageTitle" value="Basic Web Page Title"/>
+    <parameter name="elementAttributesPageTitle" value="Test Page For Element Attributes"/>
     <parameter name="paragraph01Text" value="A paragraph of text"/>
     <parameter name="paragraph02Text" value="Another paragraph of text"/>
+    <parameter name="paragraphAttributesText" value="This paragraph has attributes"/>
+    <parameter name="paragraphDynamicAttributesText" value="This paragraph has dynamic attributes"/>
 
     <test name="Test Case">
         <classes>
             <class name="com.herokuapp.tests.BasicWebPageExampleTest"/>
+            <class name="com.herokuapp.tests.ElementAttributesExamplesTest"/>
         </classes>
     </test>
 </suite>
