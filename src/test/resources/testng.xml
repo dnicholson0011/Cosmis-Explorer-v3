@@ -4,6 +4,7 @@
     <parameter name="testPageUrl" value="https://testpages.herokuapp.com/styled/index.html"/>
     <parameter name="homePageTitle" value="Selenium Test Pages"/>
     <parameter name="basicWebPageTitle" value="Basic Web Page Title"/>
+    <parameter name="locatorsPageTitle" value="Welcome to the Find By Playground"/>
     <parameter name="elementAttributesPageTitle" value="Test Page For Element Attributes"/>
     <parameter name="paragraph01Text" value="A paragraph of text"/>
     <parameter name="paragraph02Text" value="Another paragraph of text"/>
@@ -14,6 +15,7 @@
         <classes>
             <class name="com.herokuapp.tests.BasicWebPageExampleTest"/>
             <class name="com.herokuapp.tests.ElementAttributesExamplesTest"/>
+            <class name="com.herokuapp.tests.LocatorsExamplesTest"/>
         </classes>
     </test>
 </suite>
