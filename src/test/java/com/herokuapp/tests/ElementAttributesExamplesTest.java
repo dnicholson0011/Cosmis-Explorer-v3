@@ -49,6 +49,5 @@ public class ElementAttributesExamplesTest extends Base {
             throw e;
         }
     }
-
 }
 

@@ -12,6 +12,7 @@ import java.util.List;
 public class LocatorsExamplesPage {
 
     WebDriver driver;
+    private By indexUrl = By.cssSelector("a[href='index.html']");
 
     public LocatorsExamplesPage(WebDriver driver) {
         this.driver = driver;
@@ -19,6 +20,10 @@ public class LocatorsExamplesPage {
 
     public String getPageTitle() {
         return driver.getTitle();
+    }
+
+    public WebElement getIndexUrl() {
+        return driver.findElement(indexUrl);
     }
 
     public List<String> getParagraphTextList() {

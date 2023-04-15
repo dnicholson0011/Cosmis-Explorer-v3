@@ -75,5 +75,8 @@ public class LocatorsExamplesTest extends Base {
             boolean isParagraphVisible = locatorsExamplesPage.clickJumpLinkAndCheckParagraph(i);
             Assert.assertTrue(isParagraphVisible, "Paragraph " + (i + 1) + " is not in viewport after clicking the jump link.");
         }
+
+        // Navigate to homepage
+        locatorsExamplesPage.getIndexUrl().click();
     }
 }
