@@ -48,7 +48,8 @@
                     <configuration>
                         <suiteXmlFiles>
                             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                            <suiteXmlFile>src/test/resources/htmlTagExamples.xml</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/htmlTagExamples-testng.xml</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/alerts-testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>

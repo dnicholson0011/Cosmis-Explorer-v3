@@ -1,4 +1,6 @@
 package com.herokuapp.tests.htmlTagExamples;
 
-public class DynamicTableTest {
+import com.herokuapp.base.Base;
+
+public class DynamicTableTest extends Base {
 }

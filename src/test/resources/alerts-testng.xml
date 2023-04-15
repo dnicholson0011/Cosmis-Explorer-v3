@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" verbose="1">
+    <test name="Test Case">
+        <classes>
+            <class name="com.herokuapp.tests.alerts.AlertsTest"/>
+            <class name="com.herokuapp.tests.alerts.FakeAlertsTest"/>
+        </classes>
+    </test>
+</suite>

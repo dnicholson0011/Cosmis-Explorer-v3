@@ -1,4 +1,6 @@
 package com.herokuapp.tests.htmlTagExamples;
 
-public class TableTest {
+import com.herokuapp.base.Base;
+
+public class TableTest extends Base {
 }
