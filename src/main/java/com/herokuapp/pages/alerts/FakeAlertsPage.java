@@ -2,11 +2,11 @@ package com.herokuapp.pages.alerts;
 
 import org.openqa.selenium.WebDriver;
 
-public class FakeAlerts {
+public class FakeAlertsPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
-    public FakeAlerts(WebDriver driver) {
+    public FakeAlertsPage(WebDriver driver) {
         this.driver = driver;
     }
 }
