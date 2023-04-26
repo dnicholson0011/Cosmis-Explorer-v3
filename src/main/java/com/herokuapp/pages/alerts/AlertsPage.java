@@ -1,5 +1,6 @@
 package com.herokuapp.pages.alerts;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -54,5 +55,9 @@ public class AlertsPage {
 
     public WebElement getPromptExplanation() {
         return driver.findElement(promptExplanation);
+    }
+
+    public Alert getAlert() {
+        return driver.switchTo().alert();
     }
 }
